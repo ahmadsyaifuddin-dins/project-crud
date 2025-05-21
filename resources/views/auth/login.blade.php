@@ -52,7 +52,7 @@
 
         <p class="mt-10 text-center text-sm/6 text-gray-500">
             Belum Registrasi?
-            <a href="{{ route('auth.register') }}" class="font-semibold text-indigo-600 hover:text-indigo-500">Ayo
+            <a href="{{ route('register') }}" class="font-semibold text-indigo-600 hover:text-indigo-500">Ayo
                 Registrasi</a>
         </p>
     </div>
