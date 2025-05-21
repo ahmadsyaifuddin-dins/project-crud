@@ -2,12 +2,12 @@
 
 @section('content')
 <section
-    class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-900 dark:to-gray-800 p-4">
+    class="min-h-screen flex items-center justify-center bg-gradient-to-br from-red-50 to-purple-50 dark:from-gray-900 dark:to-gray-800 p-4">
     <div class="w-full max-w-md">
         <!-- Logo dan Brand -->
         <div class="text-center mb-8">
             <a href="#" class="inline-flex items-center gap-3">
-                <div class="p-2 bg-blue-600 rounded-lg shadow-lg">
+                <div class="p-2 bg-red-600 rounded-lg shadow-lg">
                     <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -15,7 +15,7 @@
                         </path>
                     </svg>
                 </div>
-                <span class="text-2xl font-bold text-gray-800 dark:text-white">{{ config('app.name', 'Laravel')
+                <span class="text-2xl font-bold text-gray-800 dark:text-white">{{ config('app.name', 'Project CRUD')
                     }}</span>
             </a>
         </div>
@@ -23,9 +23,9 @@
         <!-- Card Utama -->
         <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl overflow-hidden">
             <!-- Header -->
-            <div class="bg-gradient-to-r from-blue-500 to-purple-600 p-6">
+            <div class="bg-gradient-to-r from-red-500 to-purple-600 p-6">
                 <h1 class="text-2xl font-bold text-white">Buat Akun Baru</h1>
-                <p class="text-blue-100 mt-1">Silakan lengkapi data untuk mendaftar</p>
+                <p class="text-red-100 mt-1">Silakan lengkapi data untuk mendaftar</p>
             </div>
 
             <!-- Form -->
@@ -56,7 +56,7 @@
                                 </svg>
                             </div>
                             <input type="text" name="name" id="name"
-                                class="pl-10 bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+                                class="pl-10 bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
                                 placeholder="John Doe" required>
                         </div>
                     </div>
@@ -75,7 +75,7 @@
                                 </svg>
                             </div>
                             <input type="email" name="email" id="email"
-                                class="pl-10 bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+                                class="pl-10 bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
                                 placeholder="nama@perusahaan.com" required>
                         </div>
                     </div>
@@ -94,7 +94,7 @@
                                 </svg>
                             </div>
                             <input type="password" name="password" id="password"
-                                class="pl-10 bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+                                class="pl-10 bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
                                 placeholder="••••••••" required>
                         </div>
                     </div>
@@ -114,7 +114,7 @@
                                 </svg>
                             </div>
                             <input type="password" name="password_confirmation" id="password_confirmation"
-                                class="pl-10 bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+                                class="pl-10 bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
                                 placeholder="••••••••" required>
                         </div>
                     </div>
@@ -123,19 +123,19 @@
                     <div class="flex items-start">
                         <div class="flex items-center h-5">
                             <input id="terms" aria-describedby="terms" type="checkbox"
-                                class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800"
+                                class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-red-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-red-600 dark:ring-offset-gray-800"
                                 required>
                         </div>
                         <div class="ml-3 text-sm">
                             <label for="terms" class="font-medium text-gray-700 dark:text-gray-300">Saya menyetujui <a
-                                    class="font-medium text-blue-600 hover:underline dark:text-blue-500" href="#">Syarat
+                                    class="font-medium text-red-600 hover:underline dark:text-red-500" href="#">Syarat
                                     dan Ketentuan</a></label>
                         </div>
                     </div>
 
                     <!-- Button -->
                     <button type="submit"
-                        class="w-full text-white bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-3 text-center transition-all duration-300 transform hover:scale-[1.02] dark:focus:ring-blue-800">
+                        class="w-full text-white bg-gradient-to-r from-red-600 to-purple-600 hover:from-red-700 hover:to-purple-700 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-3 text-center transition-all duration-300 transform hover:scale-[1.02] dark:focus:ring-red-800">
                         <div class="flex items-center justify-center">
                             <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -151,7 +151,7 @@
                     <div class="text-center mt-4">
                         <p class="text-sm font-medium text-gray-600 dark:text-gray-400">
                             Sudah Punya Akun? <a href="{{ route('login') }}"
-                                class="font-bold text-blue-600 hover:underline dark:text-blue-500">Login Disini</a>
+                                class="font-bold text-red-600 hover:underline dark:text-red-500">Login Disini</a>
                         </p>
                     </div>
                 </form>
@@ -160,7 +160,7 @@
 
         <!-- Footer -->
         <div class="mt-6 text-center">
-            <p class="text-xs text-gray-500 dark:text-gray-400">© {{ date('Y') }} {{ config('app.name', 'Laravel') }}.
+            <p class="text-xs text-gray-500 dark:text-gray-400">© {{ date('Y') }} {{ config('app.name', 'Project CRUD') }}.
                 All Rights Reserved.</p>
         </div>
     </div>
