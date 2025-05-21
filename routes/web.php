@@ -17,7 +17,7 @@ Route::post('/register', [RegisterController::class, 'store'])->name('auth.regis
 
 Route::get('/login', function () {
     return view('auth.login');
-})->name('auth.login');
+})->name('login');
 
 Route::post('/login', [LoginController::class, 'login'])->name('auth.login.masuk');
 

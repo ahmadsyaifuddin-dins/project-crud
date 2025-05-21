@@ -150,7 +150,7 @@
                     <!-- Login Link -->
                     <div class="text-center mt-4">
                         <p class="text-sm font-medium text-gray-600 dark:text-gray-400">
-                            Sudah Punya Akun? <a href="{{ route('auth.login') }}"
+                            Sudah Punya Akun? <a href="{{ route('login') }}"
                                 class="font-bold text-blue-600 hover:underline dark:text-blue-500">Login Disini</a>
                         </p>
                     </div>
